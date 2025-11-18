@@ -12,11 +12,11 @@ export default function Tech() {
             Containerized, software-defined energy storage
           </h2>
           <p className="mt-4 text-neutral-600">
-            Each system combines high-density battery racks, liquid thermal management, bi-directional power conversion, and a cloud-native energy management system.
+            Flexible configurations to fit your use case: 5–100 MWh systems with 2–10 hour durations across markets.
           </p>
 
           <ul className="mt-6 grid gap-3 text-sm text-neutral-700">
-            <li className="flex items-start gap-3"><span className="mt-1 h-5 w-5 rounded-md bg-blue-600/10 text-blue-600 flex items-center justify-center">⚡</span> 1.5–4.0 hour configurations for a range of market use cases.</li>
+            <li className="flex items-start gap-3"><span className="mt-1 h-5 w-5 rounded-md bg-blue-600/10 text-blue-600 flex items-center justify-center">⚡</span> Modular blocks that scale linearly in power and energy.</li>
             <li className="flex items-start gap-3"><span className="mt-1 h-5 w-5 rounded-md bg-blue-600/10 text-blue-600 flex items-center justify-center">🧠</span> ML-based degradation modeling extends asset life and uptime.</li>
             <li className="flex items-start gap-3"><span className="mt-1 h-5 w-5 rounded-md bg-blue-600/10 text-blue-600 flex items-center justify-center">🔒</span> End-to-end cybersecurity, from embedded firmware to cloud APIs.</li>
           </ul>

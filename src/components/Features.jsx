@@ -1,47 +1,30 @@
-import { Battery, ShieldCheck, Gauge, Activity, PanelsTopLeft, Leaf, Wrench } from "lucide-react";
+import { PanelsTopLeft, ShieldCheck, Activity, Wrench } from "lucide-react";
 
+// Tightened color system: cobalt + amber only, and fewer cards
 const features = [
   {
     icon: PanelsTopLeft,
     title: "Turn‑key systems",
     desc: "Factory‑integrated containers, transformers, and EMS—ready to plug in.",
-    accent: "from-amber-500 to-orange-500",
-  },
-  {
-    icon: Battery,
-    title: "High energy density",
-    desc: "More MWh per square foot with modular, rack‑optimized packs.",
-    accent: "from-sky-500 to-blue-600",
+    accent: "from-blue-600 to-blue-700",
   },
   {
     icon: ShieldCheck,
     title: "Safety first",
     desc: "Cell‑level monitoring, active thermal control, and multi‑layer protection.",
-    accent: "from-emerald-500 to-green-600",
-  },
-  {
-    icon: Gauge,
-    title: "Fast response",
-    desc: "Millisecond dispatch for frequency regulation and peak shaving.",
-    accent: "from-fuchsia-500 to-pink-600",
+    accent: "from-amber-500 to-amber-600",
   },
   {
     icon: Activity,
-    title: "AI‑driven optimization",
-    desc: "Predictive algorithms maximize lifetime and revenue across markets.",
-    accent: "from-violet-500 to-purple-600",
+    title: "Revenue optimization",
+    desc: "Predictive dispatch maximizes $/kW‑month while protecting cycle life.",
+    accent: "from-blue-600 to-blue-700",
   },
   {
     icon: Wrench,
     title: "O&M included",
     desc: "24/7 monitoring, preventative service, and warranty management.",
-    accent: "from-teal-500 to-cyan-600",
-  },
-  {
-    icon: Leaf,
-    title: "Sustainable supply",
-    desc: "Recyclable materials and second‑life programs reduce lifecycle impact.",
-    accent: "from-lime-500 to-green-600",
+    accent: "from-amber-500 to-amber-600",
   },
 ];
 
@@ -54,7 +37,7 @@ export default function Features() {
           <p className="mt-4 text-neutral-600">From renewable integration to capacity markets, our systems deliver dependable performance with intuitive control.</p>
         </div>
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map(({ icon: Icon, title, desc, accent }) => (
             <div key={title} className="group rounded-2xl border border-black/10 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className={`h-12 w-12 rounded-xl bg-gradient-to-br ${accent} text-white flex items-center justify-center shadow-sm`}>
