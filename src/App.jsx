@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Tech from './components/Tech';
+import Services from './components/Services';
+import Sustainability from './components/Sustainability';
 import CTA from './components/CTA';
 
 function App() {
@@ -11,7 +13,9 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <Services />
         <Tech />
+        <Sustainability />
         <CTA />
       </main>
       <footer className="border-t border-black/5 bg-white">
